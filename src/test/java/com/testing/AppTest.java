@@ -1,20 +1,13 @@
 package com.testing;
 
-import static org.junit.Assert.assertTrue;
+import net.serenitybdd.cucumber.CucumberWithSerenity;
 
-import org.junit.Test;
+import org.junit.runner.RunWith;
 
-/**
- * Unit test for simple App.
- */
-public class AppTest 
-{
-    /**
-     * Rigorous Test :-)
-     */
-    @Test
-    public void shouldAnswerWithTrue()
-    {
-        assertTrue( true );
-    }
+import cucumber.api.CucumberOptions;
+
+@RunWith(CucumberWithSerenity.class)
+@CucumberOptions(features="src/test/resources",tags="@tag1" )
+public class AppTest {
+
 }
